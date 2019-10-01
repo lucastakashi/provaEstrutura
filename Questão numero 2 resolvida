@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#define TAMANHO = 20
+void main(){
+char vetor[TAMANHO]
+int eleito = o;
+int j = 0;
+clock_t tempoInicial, tempoFinal;
+srand(time(NULL));
+tempoInicial = clock();
+printf("digite uma palavra até com 20 letras");
+gets(vetor);
+printf("\n\n Você digitou a palavra %s", vetor);
+printf("Estamos ordenando os valores agora para você");
+
+for (int i = 0; i<TAMANHO; i++){
+ printf("%s\t", vetor[i]);
+
+}
+printf("\n");
+
+for (i= 1; i<TAMANHO; i++);{
+eleito = vetor[i];
+j = i -1;
+while (j >=0 && vetor [j]> eleito){
+ vetor [j + 1 ] = vetor[j];
+ j--;
+}
+ vetor[j + 1 ]  = eleito;
+}
+for (int i= 0; i< TAMANHO; i++){
+   printf("%s\t", vetor[i]);
+}
+printf("\n");
+tempoFinal = clock();
+printf("tempo que foi executado: %f s\n", double  (tempoFinal - tempoInicial) / CLOCKS_PER_SECOND);
+}
