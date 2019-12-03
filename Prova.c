@@ -37,7 +37,7 @@ struct No* diagonal;
 
 
    No*
-   No* criarArvore(){ return NULL; }
+   No* criarArvore(){ return NULL; } No;
 
 int ArvoreVazia(No* raiz){
     int getValor(No** no){
@@ -57,4 +57,5 @@ gerarArquivoDot(arquivoDot,raiz->diagonal;
 }
 }
 }
+
 
